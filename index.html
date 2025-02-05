@@ -11,9 +11,10 @@
 </head>
 <body>
     <div id="root"></div>
-
     <script type="text/babel">
-        const element = <h1 className="greeting">Hello World!</h1>
+        const name = "World";
+        const className = "greeting";
+        const element = <h1 className={className}>Hello {name}!</h1>
         ReactDOM.render(element, document.getElementById("root"));
     </script>
 </body>
